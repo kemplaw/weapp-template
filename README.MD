@@ -1,20 +1,17 @@
-# vehicles-manage-weapp
+# weapp-template
 
-车辆管理系统小程序
-
-目录结构
+weapp dev template
 
 ```
 │  .gitignore
 │  app.js
 │  app.json
 │  app.wxss
+│  .eslintrc  # eslint 配置文件
 │  config.js  # 项目配置文件
 │  package.json  # 项目依赖
 │  prettier.config.js  格式化配置
-│  project.config.json  # 小程序配置文件
 │  README.MD
-│  sitemap.json
 │
 ├─api  # 接口
 │      login.js
