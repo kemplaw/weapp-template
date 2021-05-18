@@ -52,3 +52,47 @@ Weapp dev template
         util.js                 
         validator.js            # 表单验证封装
 ```
+
+
+### Use Validator 
+
+```javascript
+// page/validator.config.js
+
+
+export const rules = {
+        username: {
+                required: true,
+                message: 'name required'
+        }
+}
+
+```
+
+```javascript
+// page/some-page/index.js
+
+const validator = new Schema(ruls)
+
+// will validate the form value
+
+import { validate } from './utils/validator.js'
+
+validateForm() {
+  validate(formValue, validator).then(({valid, errors}) => {
+        //   do something
+  })
+}
+
+```
+
+
+### Use Store
+
+```javascript
+// init store with initial state
+const store = Store.getStore({ username: 'foo' })
+
+// mutation state
+store.mutation('username', 'bar')
+```
