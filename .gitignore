@@ -7,8 +7,6 @@ yarn-error.log*
 package-lock.json
 tests/**/coverage/
 miniprogram_npm/
-project.config.json
-sitemap.json
 
 # Editor directories and files
 .idea
@@ -17,3 +15,4 @@ sitemap.json
 *.ntvs*
 *.njsproj
 *.sln
+project.private.config.json

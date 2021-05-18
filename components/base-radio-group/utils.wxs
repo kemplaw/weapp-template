@@ -1,0 +1,7 @@
+function getGap(index, listLength, gap) {
+  return index < listLength - 1 ? 'margin-right: ' + gap : ''
+}
+
+module.exports = {
+  getGap: getGap
+}

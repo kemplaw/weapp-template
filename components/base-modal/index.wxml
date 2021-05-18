@@ -1,0 +1,60 @@
+<van-popup
+  show="{{visible}}"
+  bindclose="handleModalClose"
+  close-on-click-overlay
+  custom-style="width: 78.7vw; border-radius: 16rpx; overflow: hidden;"
+>
+  <view class="base-modal-wrapper">
+    <view class="bg-wrapper">
+      <image
+        mode="aspectFill"
+        src="{{bgSrcMap[type]}}"
+        class="bg"
+      ></image>
+    </view>
+    <view class="info-wrapper">
+      <view class="info">
+        <view
+          wx:if="{{title || useTitleSlot}}"
+          class="title"
+        >
+          <slot
+            name="title"
+            wx:if="{{useTitleSlot}}"
+          ></slot>
+          <text wx:else>{{title}}</text>
+        </view>
+        <view
+          wx:if="{{content || useContentSlot}}"
+          class="content"
+        >
+          <block wx:if="{{content}}">
+            {{content}}
+          </block>
+          <slot wx:else></slot>
+        </view>
+      </view>
+
+      <!-- button -->
+      <view
+        wx:if="{{ buttons.length || useButtonSlot }}"
+        class="button-group-wrapper"
+      >
+        <view
+          wx:for="{{buttons}}"
+          wx:key="label"
+          class="button-wrapper"
+        >
+          <van-button
+            type="{{item.type}}"
+            block
+            plain="{{item.plain}}"
+            data-item="{{item}}"
+            catchtap="handleClick"
+          >{{item.label}}</van-button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</van-popup>

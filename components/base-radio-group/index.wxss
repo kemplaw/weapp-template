@@ -1,0 +1,8 @@
+.icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.radio {
+  margin-right: 0;
+}

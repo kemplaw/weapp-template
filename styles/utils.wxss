@@ -1,0 +1,7 @@
+.border-bottom {
+  border-bottom: 16rpx solid #F5F5F5;
+}
+
+.border-top {
+  border-top: 16rpx solid #F5F5F5;
+}

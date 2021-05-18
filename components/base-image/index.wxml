@@ -1,0 +1,10 @@
+<van-image
+  width="{{width}}"
+  height="{{height}}"
+  round="{{round}}"
+  radius="{{radius}}"
+  lazy-load="{{lazy}}"
+  src="{{src}}"
+  fit="contain"
+  catchtap="onPreviewImage"
+></van-image>

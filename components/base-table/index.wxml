@@ -1,0 +1,17 @@
+<view class="base-table-wrapper">
+  <view class="base-table-header-wrapper">
+    <van-row>
+      <van-col span="8">span: 8</van-col>
+      <van-col span="8">span: 8</van-col>
+      <van-col span="8">span: 8</van-col>
+    </van-row>
+  </view>
+
+  <scroll-view class="base-table-body-wrapper">
+    <van-row>
+      <van-col span="8">span: 8</van-col>
+      <van-col span="8">span: 8</van-col>
+      <van-col span="8">span: 8</van-col>
+    </van-row>
+  </scroll-view>
+</view>

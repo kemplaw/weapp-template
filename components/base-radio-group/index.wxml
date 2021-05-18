@@ -1,0 +1,25 @@
+<wxs src="./utils.wxs" module="utils"></wxs>
+<view class="base-radio-group-wrapper" style="{{customStyle}}">
+  <van-radio-group
+    value="{{ selected }}"
+    bind:change="onChange"
+    direction="horizontal"
+  >
+    <van-radio
+      wx:for="{{options}}"
+      wx:key="value"
+      use-icon-slot
+      name="{{item.value}}"
+      label-position="right"
+      custom-class="radio"
+      style="{{utils.getGap(index, options.length, gap)}}"
+    >
+      <text style="white-space: nowrap;">{{item.label}}</text>
+      <image
+        slot="icon"
+        class="icon"
+        src="{{ selected === item.value ? icon.active : icon.default }}"
+      />
+    </van-radio>
+  </van-radio-group>
+</view>

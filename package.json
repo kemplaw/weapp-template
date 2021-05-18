@@ -9,9 +9,12 @@
   },
   "author": "kemplaw",
   "dependencies": {
+    "@vant/weapp": "^1.6.8",
+    "async-validator": "^3.5.2",
     "miniprogram-computed": "^4.0.4"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.14.3",
     "eslint": "^7.26.0"
   }
 }

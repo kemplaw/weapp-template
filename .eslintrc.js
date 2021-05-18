@@ -1,21 +1,17 @@
 module.exports = {
+  root: true,
+  parser: '@babel/eslint-parser',
   env: {
     es2021: true,
     node: true,
   },
-  globals: {
-    App: true,
-    getApp: true,
-    Page: true,
+  gloabl: {
     wx: true,
-    Component: true,
   },
   extends: 'eslint:recommended',
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  rules: {
-    'no-unused-vars': 1,
-  },
+  rules: {},
 }

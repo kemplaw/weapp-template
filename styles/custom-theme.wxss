@@ -1,0 +1,45 @@
+/* vant custom theme */
+page {
+  /* base vars */
+  --blue: #006EE8;
+  --red: #ff3434;
+  --orange: #FF7334;
+
+  /* button */
+  --button-info-background-color: var(--blue);
+  --button-info-border-color: var(--blue);
+
+  --button-danger-background-color: var(--red);
+  --button-danger-border-color: var(--red);
+
+  --button-warning-background-color: var(--orange);
+  --button-warning-border-color: var(--orange);
+
+  /* cell */
+  --cell-vertical-padding: 32rpx;
+  /* --cell-horizontal-padding: 40rpx; */
+
+  /* field */
+  --field-label-color: #333;
+}
+
+.van-uploader__upload,
+.van-uploader__preview-image {
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+/* tabs */
+.van-sticky,
+.van-tabs__wrap {
+  background-color: #fff;
+}
+
+/* record-page */
+.record-wrapper .van-sticky {
+  z-index: 9999 !important;
+}
+
+.vehicles-info-wrapper .van-cell__value {
+  overflow: auto !important;
+}
