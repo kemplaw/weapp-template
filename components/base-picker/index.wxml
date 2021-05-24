@@ -1,9 +1,0 @@
-<picker
-  mode="selector"
-  range="{{options}}"
-  range-key="{{rangeKey}}"
-  value="{{selected}}"
-  bindchange="handleChange"
->
-  <slot></slot>
-</picker>

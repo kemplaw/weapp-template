@@ -1,0 +1,12 @@
+<van-popup
+  show="{{ visible }}"
+  position="bottom"
+  bindclose="handleClose"
+>
+  <van-datetime-picker
+    type="datetime"
+    value="{{ dateValue }}"
+    bindconfirm="handleConfirm"
+    bindcancel="handleCancel"
+  />
+</van-popup>

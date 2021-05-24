@@ -1,0 +1,19 @@
+<view>
+  <van-popup
+    show="{{ show }}"
+    position="bottom"
+    bindclose="onCancel"
+  >
+    <van-picker
+      show-toolbar
+      value="{{value}}"
+      columns="{{ options }}"
+      value-key="{{ valueKey }}"
+      default-index="{{defaultIndex}}"
+      bind:cancel="onCancel"
+      bind:confirm="onConfirm"
+    />
+  </van-popup>
+
+  <slot catchtap="onToggleModal"></slot>
+</view>

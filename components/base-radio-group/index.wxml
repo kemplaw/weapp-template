@@ -1,5 +1,11 @@
-<wxs src="./utils.wxs" module="utils"></wxs>
-<view class="base-radio-group-wrapper" style="{{customStyle}}">
+<wxs
+  src="./utils.wxs"
+  module="utils"
+></wxs>
+<view
+  class="base-radio-group-wrapper"
+  style="{{customStyle}}"
+>
   <van-radio-group
     value="{{ selected }}"
     bind:change="onChange"
